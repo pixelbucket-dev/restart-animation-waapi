@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .card {
+        height: 300px;
+        border-radius: 10px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Restart CSS Animation with WAAPI</h1>
+    <button onclick="renew()">Renew</button>
+    <div class="card"></div>
+    <script>
+      const options = {
+        duration: 1000,
+        easing: "ease-in"
+      };
+
+      const keyframes = {
+        boxShadow: ["0 0 16px 10px green", "0 0 0 0 transparent"]
+      };
+
+      const card = document.querySelector(".card");
+      const animation = card.animate(keyframes, options);
+
+      function renew() {
+        const card = document.querySelector(".card");
+        const animation = card.animate(keyframes, options);
+      }
+    </script>
+  </body>
+</html>
