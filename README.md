@@ -5,4 +5,4 @@ Use [WAAPI](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/
 
 Test with [CodeSandbox](https://codesandbox.io/s/restart-css-animation-with-waapi-xbc72) or:
 
-https://pixelbucket-dev.github.io/restart-animation-html/
+https://pixelbucket-dev.github.io/restart-animation-waapi/
